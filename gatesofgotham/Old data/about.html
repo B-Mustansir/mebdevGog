@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <style>
+      a {
+        font-weight: 700;
+        text-align: center;
+        font-size: 40px;
+        font-family: Hack, sans-serif;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #000, #fff, #000);
+        letter-spacing: 5px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: shine 4s linear infinite;
+        position: relative;
+      }
+      @keyframes shine {
+        0% {
+          background-position-x: -500%;
+        }
+        100% {
+          background-position-x: 500%;
+        }
+      }
+      body {
+        background-color: #130f40;
+        background-image: linear-gradient(300deg, #393660 0%, #000000 95%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        color: aliceblue;
+      }
+      nav {
+        height: 40px;
+        padding-top: 15px;
+        background-blend-mode: lighten;
+      }
+      nav a {
+        color: whitesmoke;
+      }
+      header {
+        display: flex;
+        font-size: larger;
+        border: solid;
+        height: 100px;
+        font-size: 50px;
+        align-items: center;
+        padding-left: 15px;
+        border-radius: 5px;
+      }
+      body {
+        background-color: #130f40;
+        background-image: linear-gradient(300deg, #393660 0%, #000000 95%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        color: aliceblue;
+      }
+
+      .title {
+        vertical-align: middle;
+        margin: 10px;
+        padding: 10px;
+      }
+      body {
+        background-color: #130f40;
+        background-image: linear-gradient(300deg, #393660 0%, #000000 95%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        color: aliceblue;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .m {
+        float: right;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .intro {
+        margin-left: 24%;
+        font-size: 25px;
+        word-spacing: 5px;
+        width: 50%;
+        text-align: center;
+      }
+
+      h2 {
+        width: 25%;
+        text-align: justify;
+      }
+
+      .info {
+        width: 37%;
+        text-align: justify;
+        font-size: 25px;
+        word-spacing: 5px;
+      }
+
+      .mission {
+        margin-left: 15%;
+        margin-right: 10%;
+      }
+
+      img {
+        float: right;
+        height: 550px;
+      }
+
+      .img {
+        border-radius: 20px;
+      }
+
+      footer {
+        margin-top: 13%;
+
+        display: flex;
+        background-color: azure;
+        width: 100%;
+        margin-bottom: 0px;
+        font-family: sans-serif;
+      }
+
+      .contact,
+      .subscribe {
+        margin-top: 40px;
+        margin: 20px;
+      }
+
+      h3 {
+        margin: 25px;
+      }
+
+      input[type='submit'] {
+        background-color: black;
+        color: azure;
+        padding: 3px;
+      }
+      a {
+        margin: 10px;
+        font-family: 'Source Serif 4', sans-serif;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(17, 17, 17);
+        font-size: 20px;
+
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>Crime Reporting-App</header>
+    <nav>
+      <a href="index1.html" class="title">Home</a>
+      <a href="about.html">About</a>
+      <a href="login.html" id="1">Login</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <hr />
+    <h1>OUR JOURNEY</h1>
+    <p class="intro">
+      Hi, we are a group of first year students at VIT Pune. We have created
+      this website as a part of our Capstone Project. This is a crime reporting
+      platform based on IPFS Technology. Hope you love it.
+    </p>
+    <hr />
+    <div class="mission">
+      <h3>OUR MISSION</h3>
+      <h2>Stop Crime, before Crime stops you.</h2>
+      <img src="About_image.jpg" alt="" class="img" />
+      <p class="info">
+        The advent of technology has opened new fronts of opportunities of
+        leveraging on the diverse benefits of information technology to crime
+        reporting. There are various technology platforms that have been
+        developed to assist how crime incidences are reported, responded to and
+        investigated. The technological applications have gone from telegraph,
+        special radiocommunication, and dedicated phone lines to a more
+        responsive and more pervasive technological application platforms (web
+        and mobile software applications).
+        <br />
+        <br />
+        Despite the variety of proposed crime reporting systems in the, 
+        there is need for a robust crime reporting system that will
+        provide easy access and usage alongwith highly secured database to store criminal records
+        such that crime reporting can be done in a
+        very short span and if required an immediate response from the police
+        can be actualized using the same system. It is on this premise that the
+        innovative approach Crime Reporting System (CRS) has been developed.
+      </p>
+    </div>
+  </body>
+</html>

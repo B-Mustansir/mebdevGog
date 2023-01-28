@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet" />
+
+<head>
+    <title>FAQ</title>
+
+    <style>
+        a {
+            font-weight: 700;
+            text-align: center;
+            font-size: 40px;
+            font-family: Hack, sans-serif;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #000, #fff, #000);
+            letter-spacing: 5px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: shine 4s linear infinite;
+            position: relative;
+          }
+          @keyframes shine {
+            0% {
+              background-position-x: -500%;
+            }
+            100% {
+              background-position-x: 500%;
+            }
+          }
+        h1 {
+            font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Vidaloka;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 8s linear infinite;
+    position: relative;
+        }
+
+        /*FAQS*/
+        body {
+            background-color: #130f40;
+            background-image: linear-gradient(300deg, #393660 0%, #000000 95%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-position: center;
+            color: aliceblue;
+        }
+
+        nav {
+
+            height: 40px;
+            padding-top: 15px;
+            background-blend-mode: lighten;
+        }
+
+        nav a {
+            color: whitesmoke;
+        }
+
+        header {
+            display: flex;
+            font-size: larger;
+            border: solid;
+            height: 100px;
+            font-size: 50px;
+            align-items: center;
+            padding-left: 15px;
+            border-radius: 5px;
+
+        }
+
+        a {
+            margin: 10px;
+            font-family: 'Source Serif 4', sans-serif;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(17, 17, 17);
+            font-size: 20px;
+
+            border-radius: 4px;
+        }
+
+        .faq {
+            padding: 0px;
+        }
+
+        .faq_question {
+            margin: 0px;
+            padding: 0px 0px 5px 0px;
+            display: inline-block;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .faq_answer_container {
+            display: none;
+
+
+        }
+
+        .faq_container {
+            padding: 20px;
+            border: solid 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            border-radius: 20px;
+            font-size: larger;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 800px;
+        }
+
+        .centre {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .faq_answer{
+            text-align: justify;
+        }
+
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.faq_question').click(function () {
+
+                if ($(this).parent().is('.open')) {
+                    $(this).closest('.faq').find('.faq_answer_container').slideUp();
+                    $(this).closest('.faq').removeClass('open');
+                } else {
+                    $('.faq_answer_container').slideUp();
+                    $('.faq').removeClass('open');
+                    $(this).closest('.faq').find('.faq_answer_container').slideDown();
+                    $(this).closest('.faq').addClass('open');
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>GATES OF GOTHAM</header>
+    <nav>
+        <a href="index1.html" class="title">Home</a>
+        <a href="about.html">About</a>
+        <a href="login.html" id="1">Login</a>
+        <a href="faq.html">FAQ</a>
+
+    </nav>
+    <hr>
+    <h1>Frequently Asked Questions.</h1>
+    <div class="centre">
+        <div class="faq_container">
+            <div class="faq">
+                <div class="faq_question open"><ul><li>What is the purpose of online crime reporting?</li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square" ><li>This portal will help to report the various crime happening in the society. Reporter can also upload the evidences. It also ensures that there is no need to search or go to nearby police stations to report crime, as it provides administrative login for officials.</li></ul> </div>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq_question open"><ul><li>What kind of information should I provide to report complaint? </li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>You need just first register yourself with your personal information, location of crime happening and further you describe crime in details.
+                    </li></ul> </div>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq_question open"><ul><li>What type of information would be considered as evidence while filing my complaint? </li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>Any availabe files like:
+                        <ol>
+                            <li>Photos</li>
+                            <li>Video Clips</li>
+                            <li>Audio Clips</li>
+                            <li>Documents</li>
+                        </ol></li></ul> </div>
+                </div>
+            </div>
+ 
+            <div class="faq">
+                <div class="faq_question open"><ul><li>What is Hash value and what is its purpose? </li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>Hash value is an alpha- numeric value of a fixed length that uniquely identifies data (e.g. 0800fc577294c34e0b28ad2839435945). Hash value acts as a unique fingerprint/ number to a digital file you upload as evidence in the portal (e.g., Images, Videos, Documents etc.). The hash value that you receive will ensure the integrity of digital evidence uploaded on the portal.</li></ul> </div>
+                </div>
+            </div>
+
+ 
+            <div class="faq">
+                <div class="faq_question open"><ul><li>What is IPFS? </li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>IPFS is a distributed system for storing and accessing files, websites, applications, and data.<br>
+                        IPFS knows how to find that sweet, sweet aardvark information by its contents, not its location (more on that, which is called content addressing, below). The IPFS-ified version of the aardvark info is represented by that string of numbers in the middle of the URL (QmXo…), and instead of asking one of Wikipedia's computers for the page, your computer uses IPFS to ask lots of computers around the world to share the page with you. It can get your aardvark info from anyone who has it, not just Wikipedia.
+
+                        <br>And, when you use IPFS, you don't just download files from someone else — your computer also helps distribute them. When your friend a few blocks away needs the same Wikipedia page, they might be as likely to get it from you as they would from your neighbor or anyone else using IPFS.
+
+                        <br>IPFS makes this possible for not only web pages but also any kind of file a computer might store, whether it's a document, an email, or even a database record.
+                    </li></ul> </div>
+                </div>
+            </div>
+ 
+            <div class="faq">
+                <div class="faq_question open"><ul><li>Which is the common crime in India?</li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>Rape in India has been described by Radha Kumar as one of India's most common crimes against women.</li></ul> </div>
+                </div>
+            </div>
+ 
+            <div class="faq">
+                <div class="faq_question open"><ul><li>How IPFS works? </li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>IPFS is a peer-to-peer (p2p) storage network. Content is accessible through peers located anywhere in the world, that might relay information, store it, or do both. IPFS knows how to find what you ask for using its content address rather than its location.
+                        <br>
+                        There are three fundamental principles to understanding IPFS:
+                        <br>
+                        <ol><li>Unique identification via content addressing</li>
+                        <li>Content linking via directed acyclic graphs (DAGs)</li>
+                        <li>Content discovery via distributed hash tables (DHTs)</li></ol> 
+                        <br>
+                        These three principles build upon each other to enable the IPFS ecosystem. Let's start with content addressing and the unique identification of content</li></ul> </div>
+                </div>
+            </div>
+ 
+            <div class="faq">
+                <div class="faq_question open"><ul><li>What is CSAM?</li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>Child Sexually Abusive Material (CSAM) refers to material containing sexual image in any form, of a child who is abused or sexually exploited. Section 67 (B) of IT Act states that “it is punishable for publishing or transmitting of material depicting children in sexually explicit act, etc. in electronic form”.</li></ul> </div>
+                </div>
+            </div>
+ 
+            <div class="faq">
+                <div class="faq_question open"><ul><li>Apart from this portal, are there any alternative ways to remove objectionable content from social media websites? </li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>Yes, most of the social media website like Facebook, YouTube, Twitter and Instagram etc. have the option of reporting or flagging the objectionable contents. The social media platforms may take appropriate action based on the contents reported to them as per their content policy.</li></ul> </div>
+                </div>
+            </div>
+ 
+            <div class="faq">
+                <div class="faq_question open"><ul><li>Which type of cybercrimes I can report on the portal?</li></ul> </div>
+                <div class="faq_answer_container" style="display: block;">
+                    <div class="faq_answer"> <ul type="square"><li>There are two options for reporting cybercrimes on the portal:
+
+                        <br>Report Crime related to Women/ Child – Under this section, you can report complaints pertaining to online Child Pornography (CP), Child Sexual Abuse Material (CSAM) or sexually explicit content such as Rape/Gang Rape (CP/RGR) content.
+                        
+                        <br>Report Other Cybercrimes – Under this option, you can report complaints pertaining to cybercrimes such as mobile crimes, online and social media crimes, online financial frauds, ransomware, hacking, cryptocurrency crimes and online cyber trafficking.</li></ul> </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    </b>
+</body>
+
+</html>
